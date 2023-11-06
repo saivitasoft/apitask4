@@ -12,7 +12,11 @@ import { ApicallService } from '../apicall.service';
 
     constructor(private apiService: ApicallService){}
   
-    ngOnInit(): void {
+    ngOnInit() {
+      this.apiService.getData().subscribe((res: any) => {
+        console.log(res);
+      });
+  
     }
   }
 
