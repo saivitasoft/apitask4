@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { Task1Component } from './task1/task1.component';
 import { Task2Component } from './task2/task2.component';
 import { TaskdataComponent } from './taskdata/taskdata.component';
+import {  HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { TaskdataComponent } from './taskdata/taskdata.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

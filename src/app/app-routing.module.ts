@@ -6,6 +6,7 @@ import { TaskdataComponent } from './taskdata/taskdata.component';
 
 
 
+
 const routes: Routes = [
   {path:'task1',component:Task1Component},
   {path:'task2',component:Task2Component},
