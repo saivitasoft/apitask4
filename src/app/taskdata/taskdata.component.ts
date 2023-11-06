@@ -11,10 +11,16 @@ import { ApicallService } from '../apicall.service';
   export class TaskdataComponent implements OnInit {
 
     constructor(private apiService: ApicallService){}
+    apiData!: any;
+
+
+   ngOnInit() {
+    this.apiService.getData().subscribe((res: any) => {
+      console.log(res);
+      this.apiData = res.data
+      console.log(this.apiData);
+
   
-    ngOnInit() {
-      this.apiService.getData().subscribe((res: any) => {
-        console.log(res);
       });
   
     }

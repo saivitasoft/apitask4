@@ -1,2 +1,9 @@
 <a routerLink="task1">task1</a>
 <a routerLink=" task2">task2</a>
+<ul>
+    <li *ngFor="let row of apiData">
+        
+        <p>{{row.id}}</p>
+        <img src="{{row.name}}">
+    </li>
+</ul>
