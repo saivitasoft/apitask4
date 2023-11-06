@@ -7,5 +7,8 @@ import { HttpClient } from '@angular/common/http';
 })
 export class ApicallService {
 
+  private getUrl = 'https://reqres.in/api/unknown';
+
+
   constructor(private http:HttpClient) { }
 }
